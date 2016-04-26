@@ -9,7 +9,7 @@ using namespace std;
 template <class DataType>
 class SinglyLinkedList
 {
-private:
+protected:
 	Head<DataType> headNode;
 
 public:
@@ -22,16 +22,17 @@ public:
 	~SinglyLinkedList();
 
 	/* Definition of add
-		- It adds newNode to the list
-		- Parameter: a Node variable to be added
+		- It adds newData to the list
+		- Parameter: a DataType variable to be added
 		- Return: none
 	*/
 	void add(DataType newData);
 
 	/* Overloaded add
 	- It adds newNode to a specified position in the list
-	- Parameter: newData is the the info being insterted into the list
-	- Parameter: the data to insert the newData after
+	- Parameter: 
+	      + newData: the info being insterted into the list
+	      + preData: the data to insert the newData after
 	- Return: none
 	*/
 	void add(DataType newData, DataType preData);
