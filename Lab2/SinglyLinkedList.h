@@ -68,7 +68,10 @@ public:
 	/*
 	prints contents of the list
 	*/
-	friend ostream& operator<<(ostream&, const SinglyLinkedList&);
+
+	void printList();
+
+	friend ostream& operator<<(ostream&, const SinglyLinkedList&);//dont use this
 	
 };
 
@@ -208,6 +211,20 @@ int SinglyLinkedList<DataType>::countNodes()
 	return headNode.get_nodeCounter();
 }
 
+
+template <class DataType>
+void SinglyLinkedList<DataType>::printList()
+{
+	Node<DataType>* temp = headNode.get_Front();
+
+	while (temp != nullptr)
+	{
+		cout << temp->get_data() << endl;
+		temp = temp->get_next();
+	}
+}
+
+//dont use this
 template <class DataType>
 ostream& operator<<(ostream& s, const SinglyLinkedList<DataType>& list)
 {

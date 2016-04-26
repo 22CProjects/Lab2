@@ -35,6 +35,10 @@ public:
 };
 #endif // !_STACK_LINKED_LIST
 
+template <class DataType>
+StackLinkedList<DataType>::StackLinkedList() 
+{
+}
 
 template <class DataType>
 void StackLinkedList<DataType>::push(DataType newData)
