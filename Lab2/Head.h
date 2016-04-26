@@ -7,17 +7,27 @@ template <class DataType>
 class Head : public Node<DataType>
 {
 private:
-	Node *rear;
-	Node *front;
+	Node* rear;
+	Node* front;
 	int nodeCounter;
 public:
 
-	Head() : nodeCounter(0), rear(0), front(0) {}
-	int getNodeCounter() { return nodeCounter; }
-	void incCounter() { nodeCounter++; }//prob should be an overloaded operator
+	Head() :  Node<DataType>()
+	{
+		nodeCounter = 0;
+		rear = nullptr;
+		front = nullptr;
+	}
+	~Head() {}
+	
+	Head& operator++() { nodeCounter++; return *this; }
+	Head& operator--() { nodeCounter--; return *this; }
+
 	void set_Front(Node* node) { front = node; }
-	void set_Rear(Node* node) { rear = node; }
-	Node get_Front() { return front; }
-	Node get_Rear() { return rear; }
+	void set_Rear(Node* node) { rear = node; } 
+
+	int   get_nodeCounter() { return nodeCounter; }
+	Node* get_Front() const { return front; }
+	Node* get_Rear() const { return rear; }
 };
 #endif // !_HEAD

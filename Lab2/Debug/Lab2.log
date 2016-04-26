@@ -1,4 +1,4 @@
-﻿Build started 4/23/2016 11:27:18 PM.
+﻿Build started 4/25/2016 6:30:42 PM.
      1>Project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "14.0".
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (entry point):
@@ -21,7 +21,7 @@
      1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "ResolveReferences" depends on it):
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
      1>Done building target "_PrepareForReferenceResolution" in project "Lab2.vcxproj".
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('main.cpp;SinglyLinkedList.cpp;StackLinkedList.cpp'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('main.cpp'!='' and 'false'=='true' and '' != 'false').
      1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "ResolveReferences" depends on it):
      1>Done building target "BeforeResolveReferences" in project "Lab2.vcxproj".
      1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "ResolveReferences" depends on it):
@@ -104,7 +104,7 @@
        Done executing task "MakeDir".
      1>Done building target "PrepareForBuild" in project "Lab2.vcxproj".
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('main.cpp;SinglyLinkedList.cpp;StackLinkedList.cpp'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('main.cpp'!='' and 'false'=='true' and '' != 'false').
      1>Target "GetInstalledSDKLocations" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "ResolveSDKReferences" depends on it):
        Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
        Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '' and '$(SupportWindows81SDKs)' == 'true' and '$(TargetPlatformIdentifierWindows81)' != '' and '$(TargetPlatformVersionWindows81)' != '') was evaluated as ('' != '' and '' == 'true' and '' != '' and '' != '').
@@ -141,7 +141,7 @@
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Touch"
-         Touching "Debug\Lab2.tlog\unsuccessfulbuild".
+         Creating "Debug\Lab2.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
        Done executing task "Touch".
      1>Done building target "InitializeBuildStatus" in project "Lab2.vcxproj".
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
@@ -204,8 +204,6 @@
      1>Done building target "ComputeReferenceCLInput" in project "Lab2.vcxproj".
      1>Target "WarnCompileDuplicatedFilename" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_ClCompile" depends on it):
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'main.cpp' != 'main.cpp' and 'Debug\' == 'Debug\').
-       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'SinglyLinkedList.cpp' != 'SinglyLinkedList.cpp' and 'Debug\' == 'Debug\').
-       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'StackLinkedList.cpp' != 'StackLinkedList.cpp' and 'Debug\' == 'Debug\').
      1>Done building target "WarnCompileDuplicatedFilename" in project "Lab2.vcxproj".
      1>Target "FixupCLCompileOptions" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "FixupCLCompileOptions" in project "Lab2.vcxproj".
@@ -229,7 +227,7 @@
      1>Target "SelectClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "ClCompile" depends on it):
      1>Done building target "SelectClCompile" in project "Lab2.vcxproj".
        Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
-       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('main.cpp;SinglyLinkedList.cpp;StackLinkedList.cpp' != '' and 'false' == 'True').
+       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('main.cpp' != '' and 'false' == 'True').
      1>Target "ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_ClCompile" depends on it):
        Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('EditAndContinue' != '' and 'EditAndContinue' != 'None' and 'EditAndContinue' != 'OldStyle' and 'Debug\vc140.pdb' != '' and !Exists(Debug\vc140.pdb)).
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('NotUsing' == 'Create' and ''!='true' and '' == '').
@@ -237,76 +235,172 @@
        Task "CL"
          Read Tracking Logs:
          	Debug\Lab2.tlog\CL.read.1.tlog
-         Outputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\MAIN.CPP|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\SINGLYLINKEDLIST.CPP|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\STACKLINKEDLIST.CPP:
+         Outputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\MAIN.CPP:
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ
-         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\SINGLYLINKEDLIST.OBJ
-         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\STACKLINKEDLIST.OBJ
-         SinglyLinkedList.cpp will be compiled as output C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\SINGLYLINKEDLIST.OBJ does not exist.
-         main.cpp will be compiled as output C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ does not exist.
+         main.cpp will be compiled as C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\main.cpp was modified at 4/25/2016 6:30:42 PM.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1548
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt SinglyLinkedList.cpp main.cpp
+           VS_UNICODE_OUTPUT=1360
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\MAIN.CPP|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\SINGLYLINKEDLIST.CPP" /b MSBuildConsole_CancelEvent6d3c72976cb24efab76f7b24ad7c1b6b  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt SinglyLinkedList.cpp main.cpp
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\MAIN.CPP" /b MSBuildConsole_CancelEvent030a2d03161740b384eac91cad48ad26  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(15): error C2440: 'initializing': cannot convert from 'Node<DataType>' to 'Node<DataType> *'
-                 with
-                 [
-                     DataType=int
-                 ]
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(15): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(14): note: while compiling class template member function 'SinglyLinkedList<int>::~SinglyLinkedList(void)'
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\main.cpp(5): note: see reference to function template instantiation 'SinglyLinkedList<int>::~SinglyLinkedList(void)' being compiled
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\main.cpp(5): note: see reference to class template instantiation 'SinglyLinkedList<int>' being compiled
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(32): error C2664: 'Node<DataType>::Node(Node<DataType> &&)': cannot convert argument 2 from 'Node<DataType>' to 'Node<DataType> *'
-                 with
-                 [
-                     DataType=int
-                 ]
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(32): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(30): note: while compiling class template member function 'void SinglyLinkedList<int>::add(DataType)'
-                 with
-                 [
-                     DataType=int
-                 ]
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\main.cpp(6): note: see reference to function template instantiation 'void SinglyLinkedList<int>::add(DataType)' being compiled
-                 with
-                 [
-                     DataType=int
-                 ]
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(175): error C2440: 'initializing': cannot convert from 'Node<DataType>' to 'Node<DataType> *'
-                 with
-                 [
-                     DataType=int
-                 ]
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(175): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(174): note: while compiling class template member function 'void SinglyLinkedList<int>::printList(void)'
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\main.cpp(10): note: see reference to function template instantiation 'void SinglyLinkedList<int>::printList(void)' being compiled
-         SinglyLinkedList.cpp
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(10): error C2995: 'SinglyLinkedList<DataType>::SinglyLinkedList(void)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(15): note: see declaration of 'SinglyLinkedList<DataType>::SinglyLinkedList'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(26): error C2995: 'SinglyLinkedList<DataType>::~SinglyLinkedList(void)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(20): note: see declaration of 'SinglyLinkedList<DataType>::~SinglyLinkedList'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(35): error C2995: 'void SinglyLinkedList<DataType>::add(DataType)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(27): note: see declaration of 'SinglyLinkedList<DataType>::add'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(94): error C2995: 'void SinglyLinkedList<DataType>::add(DataType,DataType)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(43): note: see declaration of 'SinglyLinkedList<DataType>::add'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(126): error C2995: 'void SinglyLinkedList<DataType>::remove(DataType)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(50): note: see declaration of 'SinglyLinkedList<DataType>::remove'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(143): error C2995: 'int SinglyLinkedList<DataType>::find(DataType)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(57): note: see declaration of 'SinglyLinkedList<DataType>::find'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(163): error C2995: 'void SinglyLinkedList<DataType>::emptyList(void)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(64): note: see declaration of 'SinglyLinkedList<DataType>::emptyList'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(170): error C2995: 'int SinglyLinkedList<DataType>::countNodes(void)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(71): note: see declaration of 'SinglyLinkedList<DataType>::countNodes'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.cpp(181): error C2995: 'void SinglyLinkedList<DataType>::printList(void)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(76): note: see declaration of 'SinglyLinkedList<DataType>::printList'
-         Generating Code...
-         The command exited with code 2.
-       Done executing task "CL" -- FAILED.
-     1>Done building target "ClCompile" in project "Lab2.vcxproj" -- FAILED.
+       Done executing task "CL".
+     1>Done building target "ClCompile" in project "Lab2.vcxproj".
+       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('main.cpp' != '' and 'false' == 'True').
+     1>Target "AfterClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_ClCompile" depends on it):
+     1>Done building target "AfterClCompile" in project "Lab2.vcxproj".
+     1>Target "_ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "_ClCompile" in project "Lab2.vcxproj".
+       Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
+     1>Target "BeforeResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Done building target "BeforeResourceCompile" in project "Lab2.vcxproj".
+     1>Target "MakeDirsForResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_ResourceCompile" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForResourceCompile" in project "Lab2.vcxproj".
+       Target "ResourceCompile" skipped, due to false condition; ('@(ResourceCompile)' != '') was evaluated as ('' != '').
+     1>Target "AfterResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Done building target "AfterResourceCompile" in project "Lab2.vcxproj".
+     1>Target "_ResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "_ResourceCompile" in project "Lab2.vcxproj".
+       Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
+       Target "_Lib" skipped, due to false condition; ('$(LibCompiled)' == 'true') was evaluated as ('' == 'true').
+     1>Target "AfterBuildCompileEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "AfterBuildCompileEvent" in project "Lab2.vcxproj".
+     1>Target "_BuildCompileAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "BuildCompile" depends on it):
+     1>Done building target "_BuildCompileAction" in project "Lab2.vcxproj".
+     1>Target "BuildCompile" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "Build" depends on it):
+     1>Done building target "BuildCompile" in project "Lab2.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+     1>Target "BuildLinkTraverse" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "BuildLink" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
+     1>Done building target "BuildLinkTraverse" in project "Lab2.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "ComputeLegacyManifestEmbedding" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(RevertManifestEmbedding)' == 'true' and '$(_LegacyManifestEmbeddingDebug)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
+     1>Done building target "ComputeLegacyManifestEmbedding" in project "Lab2.vcxproj".
+     1>Target "BeforeLink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "BeforeLink" in project "Lab2.vcxproj".
+     1>Target "ComputeRCOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
+     1>Done building target "ComputeRCOutputs" in project "Lab2.vcxproj".
+     1>Target "ComputeRCGeneratedLinkInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeRCGeneratedLinkInputs" in project "Lab2.vcxproj".
+     1>Target "ComputeManifestGeneratedLinkerInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "Lab2.vcxproj".
+     1>Target "ComputeCustomBuildOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+       Task "CreateItem" skipped, due to false condition; ('%(CustomBuildDirsToMake.OutputFileToTool)'!='') was evaluated as (''!='').
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "ComputeCustomBuildOutput" in project "Lab2.vcxproj".
+       Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+       Target "ComputeCLInputPDBName" skipped. Previously built successfully.
+       Target "ComputeReferenceCLInput" skipped. Previously built successfully.
+       Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
+       Target "FixupCLCompileOptions" skipped. Previously built successfully.
+     1>Target "ComputeCLOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "ComputeCLGeneratedLinkInputs" depends on it):
+     1>Done building target "ComputeCLOutputs" in project "Lab2.vcxproj".
+     1>Target "ComputeCLGeneratedLinkInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeCLGeneratedLinkInputs" in project "Lab2.vcxproj".
+     1>Target "ComputeLinkInputsFromProject" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeLinkInputsFromProject" in project "Lab2.vcxproj".
+       Target "ComputeReferenceLinkInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
+     1>Target "ComputeManifestInputsTargets" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeManifestInputsTargets" in project "Lab2.vcxproj".
+       Target "ManifestResourceCompile" skipped, due to false condition; ('$(EmbedManifestBy)' == 'LINK' and '@(Manifest)' != '') was evaluated as ('LINK' == 'LINK' and '' != '').
+       Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
+     1>Target "AssignTargetPaths" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "PrepareResourceNames" depends on it):
+       Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
+     1>Done building target "AssignTargetPaths" in project "Lab2.vcxproj".
+       Target "AssignTargetPaths" skipped. Previously built successfully.
+     1>Target "SplitResourcesByCulture" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "PrepareResourceNames" depends on it):
+       Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
+       Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
+       Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
+       Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
+       Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignCulture"
+       Done executing task "AssignCulture".
+     1>Done building target "SplitResourcesByCulture" in project "Lab2.vcxproj".
+       Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
+     1>Target "CreateCustomManifestResourceNames" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "PrepareResourceNames" depends on it):
+     1>Done building target "CreateCustomManifestResourceNames" in project "Lab2.vcxproj".
+     1>Target "PrepareResourceNames" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "PrepareResourceNames" in project "Lab2.vcxproj".
+     1>Target "MakeDirsForLink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForLink" in project "Lab2.vcxproj".
+     1>Target "DoLinkOutputFilesMatch" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' == '') was evaluated as ('C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' == '').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' != '' and 'C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' != 'C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' != '' and '.exe' != '' and '.exe' != '.exe').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' != '' and 'Lab2' != '' and 'Lab2' != 'Lab2').
+       Task "VCMessage" skipped, due to false condition; ('%(Link.MinimumRequiredVersion)' != '' and ('%(Link.Subsystem)' == '' or '%(Link.Subsystem)' == 'NotSet')) was evaluated as ('' != '' and ('' == '' or '' == 'NotSet')).
+     1>Done building target "DoLinkOutputFilesMatch" in project "Lab2.vcxproj".
+     1>Target "PreLinkEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+       Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+       Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
+     1>Done building target "PreLinkEvent" in project "Lab2.vcxproj".
+     1>Target "ComputeLinkSwitches" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "Link" depends on it):
+     1>Done building target "ComputeLinkSwitches" in project "Lab2.vcxproj".
+     1>Target "Link" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+       Using "Link" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
+       Task "Link"
+         Write Tracking Logs:
+         	Debug\Lab2.tlog\link.write.1.tlog
+         Read Tracking Logs:
+         	Debug\Lab2.tlog\link.read.1.tlog
+         Outputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ:
+         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\LAB2.ILK
+         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\LAB2.EXE
+         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\LAB2.PDB
+         Inputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ:
+         	C:\WINDOWS\GLOBALIZATION\SORTING\SORTDEFAULT.NLS
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\KERNEL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\USER32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\GDI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\WINSPOOL.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\COMDLG32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\ADVAPI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\SHELL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\OLE32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\OLEAUT32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\UUID.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\ODBC32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\ODBCCP32.LIB
+         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\LIB\MSVCPRTD.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\LIB\MSVCRTD.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\LIB\OLDNAMES.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\LIB\VCRUNTIMED.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.10240.0\UCRT\X86\UCRTD.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\BIN\X86\RC.EXE
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\BIN\CVTRES.EXE
+         	C:\WINDOWS\SYSTEM32\TZRES.DLL
+         Source compilation required: input C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ is newer than output C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\LAB2.EXE.
+         Environment Variables passed to tool:
+           VS_UNICODE_OUTPUT=728
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.lib" /MACHINE:X86 Debug\main.obj
+         Tracking command:
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ" /b MSBuildConsole_CancelEvent30a908de61e14f0abf1abf8dece77098  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.lib" /MACHINE:X86 Debug\main.obj
+     1>main.obj : error LNK2019: unresolved external symbol "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class SinglyLinkedList<int> const &)" (??6@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@ABV?$SinglyLinkedList@H@@@Z) referenced in function _main
+     1>C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe : fatal error LNK1120: 1 unresolved externals
+         The command exited with code 1120.
+       Done executing task "Link" -- FAILED.
+     1>Done building target "Link" in project "Lab2.vcxproj" -- FAILED.
      1>Done Building Project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.99
+Time Elapsed 00:00:01.11
