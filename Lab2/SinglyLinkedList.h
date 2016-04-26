@@ -1,5 +1,4 @@
-#ifndef _SINGLY_LINKED_LIST
-#define _SINGLY_LINKED_LIST
+#pragma once
 
 #include "Node.h"
 #include "Head.h"
@@ -75,7 +74,6 @@ public:
 	
 };
 
-#endif // !_SINGLY_LINKED_LIST
 
 
 template <class DataType>
@@ -86,17 +84,7 @@ SinglyLinkedList<DataType>::SinglyLinkedList()
 template <class DataType>
 SinglyLinkedList<DataType>::~SinglyLinkedList()
 {
-	Node<DataType>* temp_f = headNode.get_Front();//wat
-	Node<DataType>* temp_b;
-	while (temp_f != headNode.get_Rear())
-	{
-		temp_b = temp_f;
-		temp_f = temp_f->get_next();
-		delete temp_b;
-	}
-	delete temp_f;
-	headNode.set_Front(0);
-	headNode.set_Rear(0);
+	emptyList();
 }
 
 template <class DataType>
@@ -192,14 +180,14 @@ void SinglyLinkedList<DataType>::emptyList()
 	Node<DataType>* temp_b;
 
 	cout << "emptying list:" << endl;
-	while (temp_f != headNode.get_Rear())
+	while (temp_f != nullptr)
 	{
 		temp_b = temp_f;
 		temp_f = temp_f->get_next();
 		cout << "removing " << temp_b->get_data() << endl;
 		delete temp_b;
+		--headNode;
 	}
-	delete temp_f;
 	headNode.set_Front(0);
 	headNode.set_Rear(0);
 }

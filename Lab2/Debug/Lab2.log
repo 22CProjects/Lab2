@@ -1,4 +1,4 @@
-﻿Build started 4/26/2016 10:08:16 AM.
+﻿Build started 4/26/2016 11:27:58 AM.
      1>Project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "14.0".
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (entry point):
@@ -141,7 +141,7 @@
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Touch"
-         Touching "Debug\Lab2.tlog\unsuccessfulbuild".
+         Creating "Debug\Lab2.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
        Done executing task "Touch".
      1>Done building target "InitializeBuildStatus" in project "Lab2.vcxproj".
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
@@ -237,38 +237,297 @@
          	Debug\Lab2.tlog\CL.read.1.tlog
          Outputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\MAIN.CPP:
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ
-         main.cpp will be compiled as output C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ does not exist.
+         main.cpp will be compiled as C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\SINGLYLINKEDLIST.H was modified at 4/26/2016 11:27:52 AM.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1212
+           VS_UNICODE_OUTPUT=1576
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\MAIN.CPP" /b MSBuildConsole_CancelEventc6f4e371ce3e4cdbb468b56ab27bf41c  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\MAIN.CPP" /b MSBuildConsole_CancelEventccfc6606bbec43e7bd3e4d2a75663e33  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(84): error C2995: 'SinglyLinkedList<DataType>::SinglyLinkedList(void)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(17): note: see declaration of 'SinglyLinkedList<DataType>::SinglyLinkedList'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(100): error C2995: 'SinglyLinkedList<DataType>::~SinglyLinkedList(void)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(22): note: see declaration of 'SinglyLinkedList<DataType>::~SinglyLinkedList'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(109): error C2995: 'void SinglyLinkedList<DataType>::add(DataType)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(29): note: see declaration of 'SinglyLinkedList<DataType>::add'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(135): error C2995: 'void SinglyLinkedList<DataType>::add(DataType,DataType)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(38): note: see declaration of 'SinglyLinkedList<DataType>::add'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(168): error C2995: 'void SinglyLinkedList<DataType>::remove(DataType)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(45): note: see declaration of 'SinglyLinkedList<DataType>::remove'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(185): error C2995: 'int SinglyLinkedList<DataType>::find(DataType)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(52): note: see declaration of 'SinglyLinkedList<DataType>::find'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(205): error C2995: 'void SinglyLinkedList<DataType>::emptyList(void)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(59): note: see declaration of 'SinglyLinkedList<DataType>::emptyList'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(212): error C2995: 'int SinglyLinkedList<DataType>::countNodes(void)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(66): note: see declaration of 'SinglyLinkedList<DataType>::countNodes'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(225): error C2995: 'void SinglyLinkedList<DataType>::printList(void)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(72): note: see declaration of 'SinglyLinkedList<DataType>::printList'
-     1>c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(238): error C2995: 'std::ostream &operator <<(std::ostream &,const SinglyLinkedList<DataType> &)': function template has already been defined
-         c:\users\anya\documents\visual studio 2015\projects\lab2\lab2\singlylinkedlist.h(228): note: see declaration of 'operator <<'
-         The command exited with code 2.
-       Done executing task "CL" -- FAILED.
-     1>Done building target "ClCompile" in project "Lab2.vcxproj" -- FAILED.
-     1>Done Building Project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (Build target(s)) -- FAILED.
+       Done executing task "CL".
+     1>Done building target "ClCompile" in project "Lab2.vcxproj".
+       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('main.cpp' != '' and 'false' == 'True').
+     1>Target "AfterClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_ClCompile" depends on it):
+     1>Done building target "AfterClCompile" in project "Lab2.vcxproj".
+     1>Target "_ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "_ClCompile" in project "Lab2.vcxproj".
+       Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
+     1>Target "BeforeResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Done building target "BeforeResourceCompile" in project "Lab2.vcxproj".
+     1>Target "MakeDirsForResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_ResourceCompile" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForResourceCompile" in project "Lab2.vcxproj".
+       Target "ResourceCompile" skipped, due to false condition; ('@(ResourceCompile)' != '') was evaluated as ('' != '').
+     1>Target "AfterResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Done building target "AfterResourceCompile" in project "Lab2.vcxproj".
+     1>Target "_ResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "_ResourceCompile" in project "Lab2.vcxproj".
+       Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
+       Target "_Lib" skipped, due to false condition; ('$(LibCompiled)' == 'true') was evaluated as ('' == 'true').
+     1>Target "AfterBuildCompileEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "AfterBuildCompileEvent" in project "Lab2.vcxproj".
+     1>Target "_BuildCompileAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "BuildCompile" depends on it):
+     1>Done building target "_BuildCompileAction" in project "Lab2.vcxproj".
+     1>Target "BuildCompile" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "Build" depends on it):
+     1>Done building target "BuildCompile" in project "Lab2.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+     1>Target "BuildLinkTraverse" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "BuildLink" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
+     1>Done building target "BuildLinkTraverse" in project "Lab2.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "ComputeLegacyManifestEmbedding" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(RevertManifestEmbedding)' == 'true' and '$(_LegacyManifestEmbeddingDebug)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
+     1>Done building target "ComputeLegacyManifestEmbedding" in project "Lab2.vcxproj".
+     1>Target "BeforeLink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "BeforeLink" in project "Lab2.vcxproj".
+     1>Target "ComputeRCOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
+     1>Done building target "ComputeRCOutputs" in project "Lab2.vcxproj".
+     1>Target "ComputeRCGeneratedLinkInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeRCGeneratedLinkInputs" in project "Lab2.vcxproj".
+     1>Target "ComputeManifestGeneratedLinkerInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "Lab2.vcxproj".
+     1>Target "ComputeCustomBuildOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+       Task "CreateItem" skipped, due to false condition; ('%(CustomBuildDirsToMake.OutputFileToTool)'!='') was evaluated as (''!='').
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "ComputeCustomBuildOutput" in project "Lab2.vcxproj".
+       Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+       Target "ComputeCLInputPDBName" skipped. Previously built successfully.
+       Target "ComputeReferenceCLInput" skipped. Previously built successfully.
+       Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
+       Target "FixupCLCompileOptions" skipped. Previously built successfully.
+     1>Target "ComputeCLOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "ComputeCLGeneratedLinkInputs" depends on it):
+     1>Done building target "ComputeCLOutputs" in project "Lab2.vcxproj".
+     1>Target "ComputeCLGeneratedLinkInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeCLGeneratedLinkInputs" in project "Lab2.vcxproj".
+     1>Target "ComputeLinkInputsFromProject" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeLinkInputsFromProject" in project "Lab2.vcxproj".
+       Target "ComputeReferenceLinkInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
+     1>Target "ComputeManifestInputsTargets" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "ComputeManifestInputsTargets" in project "Lab2.vcxproj".
+       Target "ManifestResourceCompile" skipped, due to false condition; ('$(EmbedManifestBy)' == 'LINK' and '@(Manifest)' != '') was evaluated as ('LINK' == 'LINK' and '' != '').
+       Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
+     1>Target "AssignTargetPaths" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "PrepareResourceNames" depends on it):
+       Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
+     1>Done building target "AssignTargetPaths" in project "Lab2.vcxproj".
+       Target "AssignTargetPaths" skipped. Previously built successfully.
+     1>Target "SplitResourcesByCulture" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "PrepareResourceNames" depends on it):
+       Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
+       Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
+       Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
+       Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
+       Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignCulture"
+       Done executing task "AssignCulture".
+     1>Done building target "SplitResourcesByCulture" in project "Lab2.vcxproj".
+       Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
+     1>Target "CreateCustomManifestResourceNames" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "PrepareResourceNames" depends on it):
+     1>Done building target "CreateCustomManifestResourceNames" in project "Lab2.vcxproj".
+     1>Target "PrepareResourceNames" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "PrepareResourceNames" in project "Lab2.vcxproj".
+     1>Target "MakeDirsForLink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForLink" in project "Lab2.vcxproj".
+     1>Target "DoLinkOutputFilesMatch" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' == '') was evaluated as ('C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' == '').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' != '' and 'C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' != 'C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' != '' and '.exe' != '' and '.exe' != '.exe').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' != '' and 'Lab2' != '' and 'Lab2' != 'Lab2').
+       Task "VCMessage" skipped, due to false condition; ('%(Link.MinimumRequiredVersion)' != '' and ('%(Link.Subsystem)' == '' or '%(Link.Subsystem)' == 'NotSet')) was evaluated as ('' != '' and ('' == '' or '' == 'NotSet')).
+     1>Done building target "DoLinkOutputFilesMatch" in project "Lab2.vcxproj".
+     1>Target "PreLinkEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+       Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+       Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
+     1>Done building target "PreLinkEvent" in project "Lab2.vcxproj".
+     1>Target "ComputeLinkSwitches" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "Link" depends on it):
+     1>Done building target "ComputeLinkSwitches" in project "Lab2.vcxproj".
+     1>Target "Link" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+       Using "Link" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
+       Task "Link"
+         Write Tracking Logs:
+         	Debug\Lab2.tlog\link.write.1.tlog
+         Read Tracking Logs:
+         	Debug\Lab2.tlog\link.read.1.tlog
+         Outputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ:
+         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\LAB2.ILK
+         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\LAB2.EXE
+         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\LAB2.PDB
+         Inputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ:
+         	C:\WINDOWS\GLOBALIZATION\SORTING\SORTDEFAULT.NLS
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\KERNEL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\USER32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\GDI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\WINSPOOL.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\COMDLG32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\ADVAPI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\SHELL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\OLE32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\OLEAUT32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\UUID.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\ODBC32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\ODBCCP32.LIB
+         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ
+         	C:\WINDOWS\SYSTEM32\TZRES.DLL
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\LIB\MSVCPRTD.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\LIB\MSVCRTD.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\LIB\OLDNAMES.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\LIB\VCRUNTIMED.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.10240.0\UCRT\X86\UCRTD.LIB
+         Source compilation required: input C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ is newer than output C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\LAB2.PDB.
+         Environment Variables passed to tool:
+           VS_UNICODE_OUTPUT=704
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.lib" /MACHINE:X86 Debug\main.obj
+         Tracking command:
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ" /b MSBuildConsole_CancelEventbe686a39e41f41328c212f89417b5f11  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.lib" /MACHINE:X86 Debug\main.obj
+       Done executing task "Link".
+       Task "Message"
+         Lab2.vcxproj -> C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe
+       Done executing task "Message".
+       Task "Message" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
+                    %(Link.GenerateDebugInformation) == 'DebugFastLink') was evaluated as (('LINK' != 'LINK' or '' != 'true' or 'False' == 'true') and
+                    true == 'DebugFastLink').
+       Task "Message" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
+                    %(Link.GenerateDebugInformation) == 'Debug') was evaluated as (('LINK' != 'LINK' or '' != 'true' or 'False' == 'true') and
+                    true == 'Debug').
+     1>Done building target "Link" in project "Lab2.vcxproj".
+       Target "MetaGenInputsOutputs" skipped, due to false condition; ('$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('false' == 'True').
+       Target "ComputeMetaGenInputs" skipped, due to false condition; ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false') was evaluated as ('false'!='' and 'false'!='false').
+       Target "MetaGen" skipped, due to false condition; ('@(MetaGen)' != '') was evaluated as ('' != '').
+     1>Target "ComputeLinkImportLibraryOutputsForClean" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+       Task "WriteLinesToFile" skipped, due to false condition; ('@(_LinkSecondaryOutput)' != '') was evaluated as ('' != '').
+     1>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "Lab2.vcxproj".
+     1>Target "AfterLink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
+     1>Done building target "AfterLink" in project "Lab2.vcxproj".
+     1>Target "_Link" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_Link" in project "Lab2.vcxproj".
+     1>Target "_ALink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_ALink" in project "Lab2.vcxproj".
+       Target "ComputeLegacyManifestEmbedding" skipped. Previously built successfully.
+     1>Target "_Manifest" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
+     1>Done building target "_Manifest" in project "Lab2.vcxproj".
+     1>Target "RegisterOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'!='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'=='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'!='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'=='true').
+       Task "VCMessage" skipped, due to false condition; ('$(_RegisterOutputExitCode)' != '' and '$(_RegisterOutputExitCode)' != '0') was evaluated as ('' != '' and '' != '0').
+     1>Done building target "RegisterOutput" in project "Lab2.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "ResolvedXDCMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_XdcMake" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '$(_ClCompileGenerateXMLDocumentationFiles)' == 'true') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '' and '' == 'true').
+     1>Done building target "ResolvedXDCMake" in project "Lab2.vcxproj".
+     1>Target "ComputeCLCompileGeneratedXDCFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_XdcMake" depends on it):
+     1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "Lab2.vcxproj".
+     1>Target "MakeDirsForXdcMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_XdcMake" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForXdcMake" in project "Lab2.vcxproj".
+       Target "XdcMake" skipped, due to false condition; ('@(XdcMake)' != '') was evaluated as ('' != '').
+     1>Target "_XdcMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_XdcMake" in project "Lab2.vcxproj".
+     1>Target "ComputeCLCompileGeneratedSbrFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BscMake" depends on it):
+     1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "Lab2.vcxproj".
+     1>Target "MakeDirsForBscMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BscMake" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForBscMake" in project "Lab2.vcxproj".
+       Target "BscMake" skipped, due to false condition; ('@(BscMake)' != '') was evaluated as ('' != '').
+       Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
+     1>Target "_BscMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_BscMake" in project "Lab2.vcxproj".
+       Target "RunMergeNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
+       Target "RunNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
+     1>Target "_GenerateSatelliteAssemblyInputs" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
+       Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+       Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+     1>Done building target "_GenerateSatelliteAssemblyInputs" in project "Lab2.vcxproj".
+       Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
+       Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
+     1>Target "CreateSatelliteAssemblies" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "CreateSatelliteAssemblies" in project "Lab2.vcxproj".
+     1>Target "_Appverifier" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_Appverifier" in project "Lab2.vcxproj".
+     1>Target "_Deploy" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_Deploy" in project "Lab2.vcxproj".
+       Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
+       Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
+       Target "AssignTargetPaths" skipped. Previously built successfully.
+       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+     1>Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+     1>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "Lab2.vcxproj".
+     1>Target "GetCopyToOutputDirectoryItems" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+     1>Done building target "GetCopyToOutputDirectoryItems" in project "Lab2.vcxproj".
+       Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
+       Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
+     1>Target "_CopySourceItemsToOutputDirectory" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Done building target "_CopySourceItemsToOutputDirectory" in project "Lab2.vcxproj".
+       Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
+       Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
+     1>Target "_CheckForCompileOutputs" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Done building target "_CheckForCompileOutputs" in project "Lab2.vcxproj".
+       Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+     1>Target "CopyFilesToOutputDirectory" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "PrepareForRun" depends on it):
+       Task "Copy" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('true' == 'true' and 'true' != 'true').
+       Task "Message" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)'!='true') was evaluated as ('true' == 'true' and 'true'!='true').
+       Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
+       Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
+       Using "Copy" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Copy"
+         Did not copy from file "Debug\Lab2.pdb" to file "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.pdb" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+       Done executing task "Copy".
+       Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
+       Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
+       Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
+       Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
+       Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
+     1>Done building target "CopyFilesToOutputDirectory" in project "Lab2.vcxproj".
+     1>Target "PrepareForRun" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "PrepareForRun" in project "Lab2.vcxproj".
+       Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
+     1>Target "PostBuildEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+       Task "Exec" skipped, due to false condition; ('%(PostBuildEvent.Command)' != '') was evaluated as ('' != '').
+     1>Done building target "PostBuildEvent" in project "Lab2.vcxproj".
+     1>Target "_BuildLinkAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "BuildLink" depends on it):
+     1>Done building target "_BuildLinkAction" in project "Lab2.vcxproj".
+     1>Target "BuildLink" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "Build" depends on it):
+     1>Done building target "BuildLink" in project "Lab2.vcxproj".
+       Target "CreateTfsBuildInfoResource" skipped, due to false condition; ( $(AddBuildInfoToAssembly)==true ) was evaluated as ( false==true ).
+     1>Target "AfterBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "Build" depends on it):
+     1>Done building target "AfterBuild" in project "Lab2.vcxproj".
+     1>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "Build" depends on it):
+       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Delete"
+         Deleting file "Debug\Lab2.tlog\unsuccessfulbuild".
+       Done executing task "Delete".
+       Task "Touch"
+         Touching "Debug\Lab2.tlog\Lab2.lastbuildstate".
+       Done executing task "Touch".
+     1>Done building target "FinalizeBuildStatus" in project "Lab2.vcxproj".
+     1>Target "Build" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (entry point):
+     1>Done building target "Build" in project "Lab2.vcxproj".
+     1>Done Building Project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.80
+Time Elapsed 00:00:03.20

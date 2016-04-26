@@ -1,5 +1,4 @@
-#ifndef _STACK_LINKED_LIST
-#define _STACK_LINKED_LIST
+#pragma once
 
 #include "SinglyLinkedList.h"
 #include "Node.h"
@@ -10,6 +9,9 @@ class StackLinkedList : public SinglyLinkedList<DataType>
 public:
 	/* DEFAULT CONSTRUCTOR */
 	StackLinkedList();
+
+	/*DESTRUCTOR*/
+	~StackLinkedList();
 
 	/* Definition of push
 	- It adds newData to the list in a stack order
@@ -33,51 +35,30 @@ public:
 	bool isEmpty();
 
 };
-#endif // !_STACK_LINKED_LIST
+
 
 template <class DataType>
-StackLinkedList<DataType>::StackLinkedList() 
+StackLinkedList<DataType>::StackLinkedList() : SinglyLinkedList<DataType>()
+{
+}
+
+template <class DataType>
+StackLinkedList<DataType>::~StackLinkedList() 
 {
 }
 
 template <class DataType>
 void StackLinkedList<DataType>::push(DataType newData)
 {
-	Node<DataType>* newNode;
-	Node<DataType>* temp_f = headNode.get_Front();
-	Node<DataType>* temp_b;
-
-	while (temp_f != headNode.get_Rear())
-	{
-		temp_f = temp_f->get_next();
-	}
-
-	temp_b = temp_f;
-	temp_f = temp_f->get_next();
-	newNode = new Node<DataType>(newData, temp_f);
-	temp_b->set_next(newNode);
-
-	++headNode;
+	add(newData);
 }
 
 
 template <class DataType>
 void StackLinkedList<DataType>::pop()
 {
-	Node<DataType>* newNode;
-	Node<DataType>* temp_f = headNode.get_Front();
-	Node<DataType>* temp_b;
-
-	while (temp_f != headNode.get_Rear())
-	{
-		temp_b = temp_f;
-		temp_f = temp_f->get_next();
-	}
-
-	temp_b->set_next(temp_f->get_next());
-	delete temp_f;
-
-	--headNode;
+	DataType d = headNode.get_Front()->get_data();
+	remove(d);
 }
 
 
