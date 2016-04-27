@@ -4,7 +4,7 @@
 #include "Node.h"
 
 template <class DataType>
-class StackLinkedList : public SinglyLinkedList<DataType>
+class StackLinkedList : protected SinglyLinkedList<DataType>
 {
 public:
 	/* DEFAULT CONSTRUCTOR */
@@ -34,6 +34,20 @@ public:
 	*/
 	bool isEmpty();
 
+	void emptyStack()
+	{
+		emptyList();
+	}
+
+	int countNodes()
+	{
+		return headNode.get_nodeCounter();
+	}
+
+	void printStack()
+	{
+		printList();
+	}
 };
 
 
@@ -70,3 +84,10 @@ bool StackLinkedList<DataType>::isEmpty()
 	else
 		return false;
 }
+
+
+
+
+
+
+

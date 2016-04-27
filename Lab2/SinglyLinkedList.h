@@ -62,7 +62,7 @@ public:
 		- Parameter: none
 		- Return: an int (number of nodes)
 	*/
-	int countNodes();
+	virtual int countNodes();
 
 	/*
 	prints contents of the list
@@ -225,3 +225,4 @@ ostream& operator<<(ostream& s, const SinglyLinkedList<DataType>& list)
 	}
 	return s;
 }
+

@@ -11,11 +11,11 @@ int main()
 	S.push(3);
 	S.push(6);
 	S.push(2);
-	S.printList();
+	S.printStack();
 	S.pop();
-	S.printList();
+	S.printStack();
 	cout<<endl<<S.countNodes()<<endl;
-	S.emptyList();
+	S.emptyStack();
 	cout << endl << S.countNodes() << endl;
 	if (S.isEmpty() == true)
 	{
