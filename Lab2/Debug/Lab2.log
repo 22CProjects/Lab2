@@ -1,4 +1,4 @@
-﻿Build started 4/26/2016 5:22:57 PM.
+﻿Build started 4/26/2016 11:11:31 PM.
      1>Project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "14.0".
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (entry point):
@@ -141,7 +141,7 @@
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Touch"
-         Touching "Debug\Lab2.tlog\unsuccessfulbuild".
+         Creating "Debug\Lab2.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
        Done executing task "Touch".
      1>Done building target "InitializeBuildStatus" in project "Lab2.vcxproj".
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
@@ -237,12 +237,12 @@
          	Debug\Lab2.tlog\CL.read.1.tlog
          Outputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\MAIN.CPP:
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ
-         main.cpp will be compiled as output C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ does not exist.
+         main.cpp will be compiled as C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\main.cpp was modified at 4/26/2016 11:11:31 PM.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1164
+           VS_UNICODE_OUTPUT=1816
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\MAIN.CPP" /b MSBuildConsole_CancelEvent7d21a211b0974416a453f511dac620f3  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\MAIN.CPP" /b MSBuildConsole_CancelEvent5e3e5a2c99564cfbb8390f774869a058  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
        Done executing task "CL".
      1>Done building target "ClCompile" in project "Lab2.vcxproj".
@@ -346,7 +346,7 @@
        Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' != '' and 'C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' != 'C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe').
        Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' != '' and '.exe' != '' and '.exe' != '.exe').
        Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe' != '' and 'Lab2' != '' and 'Lab2' != 'Lab2').
-       Task "VCMessage" skipped, due to false condition; ('%(Link.MinimumRequiredVersion)' != '' and ('%(Link.Subsystem)' == '' or '%(Link.Subsystem)' == 'NotSet')) was evaluated as ('' != '' and ('' == '' or '' == 'NotSet')).
+       Task "VCMessage" skipped, due to false condition; ('%(Link.MinimumRequiredVersion)' != '' and ('%(Link.Subsystem)' == '' or '%(Link.Subsystem)' == 'NotSet')) was evaluated as ('' != '' and ('Console' == '' or 'Console' == 'NotSet')).
      1>Done building target "DoLinkOutputFilesMatch" in project "Lab2.vcxproj".
      1>Target "PreLinkEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Lab2.vcxproj" (target "_Link" depends on it):
        Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
@@ -388,10 +388,10 @@
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.10240.0\UCRT\X86\UCRTD.LIB
          Source compilation required: input C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ is newer than output C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\LAB2.PDB.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=944
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.lib" /MACHINE:X86 Debug\main.obj
+           VS_UNICODE_OUTPUT=1584
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.lib" /MACHINE:X86 Debug\main.obj
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ" /b MSBuildConsole_CancelEventf90c79150b8b4099bf2fc924428713de  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.lib" /MACHINE:X86 Debug\main.obj
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB2\LAB2\DEBUG\MAIN.OBJ" /b MSBuildConsole_CancelEvent98a43275c9734122a31a57016234571e  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.lib" /MACHINE:X86 Debug\main.obj
        Done executing task "Link".
        Task "Message"
          Lab2.vcxproj -> C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab2\Lab2\Debug\Lab2.exe
@@ -530,4 +530,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.75
+Time Elapsed 00:00:01.15

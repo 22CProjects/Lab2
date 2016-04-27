@@ -20,21 +20,37 @@ public:
 	*/
 	~SinglyLinkedList();
 
-	/* Definition of add
-		- It adds newData to the list
+	/* Definition of addTop
+		- It adds newData to the front of thelist
 		- Parameter: a DataType variable to be added
 		- Return: none
 	*/
-	void add(DataType newData);
+	void addTop(DataType newData);
 
-	/* Overloaded add
-	- It adds newNode to a specified position in the list
+	/* Definition of addEnd
+	- It adds newData to the end of the list
+	- Parameter: a DataType variable to be added
+	- Return: none
+	*/
+	void addEnd(DataType newData);
+
+	/* Definition addAfter
+	- It adds newNode after an existing node in the list
 	- Parameter: 
 	      + newData: the info being insterted into the list
 	      + preData: the data to insert the newData after
 	- Return: none
 	*/
-	void add(DataType newData, DataType preData);
+	void addAfter(DataType newData, DataType preData);
+
+	/* Definition addToPos
+	- It adds newNode to a specified position in the list
+	- Parameters:
+	+ newData: the info being insterted into the list
+	+ pos: the position to insert the node in
+	- Return: none
+	*/
+	void addToPos(DataType newData, int pos);
 
 	/* Definition of deleteNode
 		- It removes a Node from the list
@@ -65,12 +81,12 @@ public:
 	virtual int countNodes();
 
 	/*
-	prints contents of the list
+	Definition of overloaded operator<<
+	- prints contents of the list
+	- Parameter: none
+	- Return: void
 	*/
-
-	void printList();
-
-	friend ostream& operator<<(ostream&, const SinglyLinkedList&);//dont use this
+	template<class DataType> friend ostream& operator<<(ostream&, const SinglyLinkedList<DataType>&);
 	
 };
 
@@ -79,25 +95,40 @@ public:
 template <class DataType>
 SinglyLinkedList<DataType>::SinglyLinkedList()
 {
-}
+}//end default contructor
 
 template <class DataType>
 SinglyLinkedList<DataType>::~SinglyLinkedList()
 {
 	emptyList();
-}
+}//end deconstructor
 
 template <class DataType>
-void SinglyLinkedList<DataType>::add(DataType newData)
+void SinglyLinkedList<DataType>::addTop(DataType newData)
 {
 	Node<DataType>* newNode;
 	newNode = new Node<DataType>(newData, headNode.get_Front());
 	headNode.set_Front(newNode);
 	++headNode;
-}
+}//end addTop
 
 template <class DataType>
-void SinglyLinkedList<DataType>::add(DataType newData, DataType preData)
+void SinglyLinkedList<DataType>::addEnd(DataType newData)
+{
+	Node<DataType>* newNode;
+	Node<DataType>* temp_f = headNode.get_Front();
+
+	newNode = new Node<DataType>(newData,nullptr);
+	while (temp_f->get_next() != nullptr)
+	{
+		temp_f = temp_f->get_next();
+	}
+	temp_f->set_next(newNode);
+	++headNode;
+}//end addEnd
+
+template <class DataType>
+void SinglyLinkedList<DataType>::addAfter(DataType newData, DataType preData)
 {
 	Node<DataType>* newNode;
 	Node<DataType>* temp_f = headNode.get_Front();
@@ -120,7 +151,41 @@ void SinglyLinkedList<DataType>::add(DataType newData, DataType preData)
 	{
 		cout << preData << "is not in the List";
 	}
-}
+}//end addAfter
+
+template <class DataType>
+void SinglyLinkedList<DataType>::addToPos(DataType newData, int pos)
+{
+	Node<DataType>* newNode;
+	Node<DataType>* temp_f = headNode.get_Front();
+	Node<DataType>* temp_b;
+	if (pos <= headNode.get_nodeCounter())
+	{
+		if (pos == 0)
+		{
+			newNode = new Node<DataType>(newData, headNode.get_Front());
+			headNode.set_Front(newNode);
+		}
+		else
+		{
+			for (int i = 0; i < pos - 1; i++)
+			{
+				temp_f = temp_f->get_next();
+			}
+			temp_b = temp_f;
+			temp_f = temp_f->get_next();
+			newNode = new Node<DataType>(newData, temp_f);
+			temp_b->set_next(newNode);
+
+		}
+		++headNode;
+	}
+	else
+	{
+		cout << "error: position not in range";
+	}
+}//end addToPos
+
 
 template <class DataType>
 void SinglyLinkedList<DataType>::remove(DataType data2delete)
@@ -153,7 +218,7 @@ void SinglyLinkedList<DataType>::remove(DataType data2delete)
 	{
 		cout << "The data does not exist in the list";
 	}
-}
+}//end remove
 
 
 template <class DataType>
@@ -170,7 +235,7 @@ int SinglyLinkedList<DataType>::find(DataType data2find)
 		pos++;
 	}
 	return -1;
-}
+}//end find
 
 
 template <class DataType>
@@ -190,29 +255,18 @@ void SinglyLinkedList<DataType>::emptyList()
 	}
 	headNode.set_Front(0);
 	headNode.set_Rear(0);
-}
+}//end emptyList
 
 
 template <class DataType>
 int SinglyLinkedList<DataType>::countNodes()
 {
 	return headNode.get_nodeCounter();
-}
+}//end countNodes
 
 
-template <class DataType>
-void SinglyLinkedList<DataType>::printList()
-{
-	Node<DataType>* temp = headNode.get_Front();
 
-	while (temp != nullptr)
-	{
-		cout << temp->get_data() << endl;
-		temp = temp->get_next();
-	}
-}
 
-//dont use this
 template <class DataType>
 ostream& operator<<(ostream& s, const SinglyLinkedList<DataType>& list)
 {
